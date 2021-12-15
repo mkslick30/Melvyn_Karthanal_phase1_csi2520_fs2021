@@ -1,0 +1,33 @@
+{
+  "name": "phase_1",
+  "version": "1.0.0",
+  "description": "Phase 2 project college Lifestyle Survey",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mkslick30/Melvyn_Karthanal_phase1_csi2520_fs2021.git"
+  },
+  "keywords": [
+    "phase",
+    "2",
+    "project"
+  ],
+  "author": "Melvyn Karthanal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mkslick30/Melvyn_Karthanal_phase1_csi2520_fs2021/issues"
+  },
+  "homepage": "https://github.com/mkslick30/Melvyn_Karthanal_phase1_csi2520_fs2021#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.15",
+    "prohairesis": "^1.2.5"
+  }
+}

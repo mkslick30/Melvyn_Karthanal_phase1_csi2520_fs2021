@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Survey Page</title>
+
+    <link rel="stylesheet" href="../public/css/stylesheet.css">
+</head>
+<body>
+    <header>
+        <h1>My College Survey Web Page</h1>
+        <nav id="navbar">
+            <a href="results" id="one">Results</a>
+        </nav>
+    </header>
+    <hr>
+    <main>
+        <form id="form" action="/insertQuestion" method="POST">
+            <table>
+                
+                <tr>
+                    <td>1</td>
+                    <td>What is your first and last name?</td>
+                    <td><input type="text" id="name"></input></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>What college or University do you attend?</td>
+                    <td><input type="text" id="college"></input></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Do you dorm on campus?</td>
+                    <td><input type="text" id="dorm"></input></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>How many classes are you taking at this moment?</td>
+                    <td><input type="text" id="class"></input></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>What is your favorite class of all time?</td>
+                    <td><input type="text" id="fav"></input></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>What are you majoring in?</td>
+                    <td><input type="text" id="major"></input></td>
+                </tr>
+                    
+                
+            </table>
+            <button type="submit" id="btn" name="submitBtn" value="Submit">Submit</button>
+        </form>
+    </main>
+
+    <script>
+        const form = document.querySelector('#form')
+        form.addEventListener('submit', (event) => {
+            event.preventDefault();
+            var nme = document.querySelector('#name').value;
+            if (nme != "") {
+                form.submit();
+            }
+        }
+    </script>
+    
+</body>
+</html>
